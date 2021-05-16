@@ -1,0 +1,7 @@
+﻿  tanque.cpp
+C:\Users\Enri\source\ProyectoINF\Tanque2D\src\tanque.cpp(67,36): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\Enri\source\ProyectoINF\Tanque2D\src\tanque.cpp(75,27): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\Enri\source\ProyectoINF\Tanque2D\src\tanque.cpp(78,27): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\Enri\source\ProyectoINF\Tanque2D\src\tanque.cpp(81,27): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\Enri\source\ProyectoINF\Tanque2D\src\tanque.cpp(84,27): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+  Pang.vcxproj -> C:\Users\Enri\source\ProyectoINF\Tanque2D\bin\Tanque2D.exe
