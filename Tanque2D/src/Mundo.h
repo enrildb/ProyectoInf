@@ -1,24 +1,21 @@
 #include "tanque.h"
 #include "Vector2D.h"
-
+#include "tanqueJugador.h"
+#include "tanqueEnemigo.h"
 
 class Mundo
 {
 private:
 	Vector2D raton;
-	tanque tank;
+	tanqueJugador tankJ;
+	tanqueEnemigo tankE;
 
 public: 
+	Mundo();
 	void tecla(unsigned char key);
 	void inicializa();
-	void rotarOjo();
 	void mueve();
 	void dibuja();
 	void teclaEspecial(unsigned char);
 	void setRaton(int x, int y);
-
-
-	float x_ojo;
-	float y_ojo;
-	float z_ojo;
 };

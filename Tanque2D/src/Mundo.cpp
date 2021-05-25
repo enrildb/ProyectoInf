@@ -2,48 +2,41 @@
 #include "freeglut.h"
 #include <math.h>
 
-void Mundo::rotarOjo()
-{
-	float dist=sqrt(x_ojo*x_ojo+z_ojo*z_ojo);
-	float ang=atan2(z_ojo,x_ojo);
-	ang+=0.05f;
-	x_ojo=dist*cos(ang);
-	z_ojo=dist*sin(ang);
-}
+Mundo::Mundo(){}
+
 void Mundo::dibuja()
 {        
-	tank.Dibuja();
+	tankJ.Dibuja();
+	tankE.Dibuja();
 }
 
 void Mundo::mueve()
 {
-
-	tank.Mueve(0.025f);
-	tank.setApuntado(raton.x, raton.y);
+	tankJ.Mueve(0.025f);
+	tankJ.setApuntado(raton.x, raton.y);
+	tankE.Mueve(0.025f);
+	tankE.setApuntado(tankJ.getPos());
 }
 
 void Mundo::inicializa()
 {
-	x_ojo=0;
-	y_ojo=0;
-	z_ojo=20;
-
-	tank.Inicializa(0,0,0,0,0,0,0,0,0,0,0);
+	tankJ.Inicializa();
+	tankE.Inicializa();
 }
 
 void Mundo::tecla(unsigned char key)
 {
 	switch (key)
 	{
-	case ' ':
-		tank.Dispara();
+	case GLUT_LEFT_BUTTON:
+		tankJ.Dispara();
 		break;
 	}
 }
 
 void Mundo::teclaEspecial(unsigned char key)
 {
-	tank.mueveTecla(key); //Alternativa para mover el tanque
+	tankJ.mueveTecla(key); //Alternativa para mover el tanque
 	//switch (key)
 	//{
 	//case GLUT_KEY_LEFT:
@@ -65,8 +58,14 @@ void Mundo::teclaEspecial(unsigned char key)
 
 
 }
-	void Mundo::setRaton(int x, int y) {
-		raton.x = x;
-		raton.y = y;
-    }
+	//void Mundo::setRaton(int x, int y) {
+	//	raton.x = x;
+	//	raton.y = y;
+ //   }
+
+void Mundo::setRaton(int x, int y) {
+	raton.x = (x / 400.0f - 1);
+	raton.y = (400 - y) / 400.0f;
+}
+
 
