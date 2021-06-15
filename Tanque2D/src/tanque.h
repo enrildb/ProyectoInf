@@ -6,12 +6,7 @@
 
 class tanque {
 protected:
-	//float salud;
-	//float daño_disparo;
-	//float velocidad_proyectil;
-	//float cadencia;
-	//float rango;
-	//float num_proyectiles;
+
 	float municion;
 	float vel;
 	ColorRGB color;
@@ -20,16 +15,15 @@ protected:
 	Vector2D apuntado;
 	Vector2D posicion;
 	Vector2D velocidad;
-	//Vector2D aceleracion;
 
 public:
+	friend class Interaccion;
 	tanque();
 	void Inicializa();
-	void Inicializa(Vector2D posicion, Vector2D velocidad, Vector2D aceleracion, float salud, float daño_disparo, float municion, float velocidad_proyectil, float cadencia, float rango, float num_proyectiles, float vel);
-	//void Recarga();
-	//void Muerte();
 	void Dibuja();
 	void Mueve(float t);
+	//void Interacciona(Caja& c);
+	//void Interacciona(ListaCajas c);
 	void Dispara();
 	void setVel(float vx, float vy);
 	void setApuntado(float x, float y);

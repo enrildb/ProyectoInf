@@ -3,6 +3,7 @@
 
 class Proyectil
 {
+	friend class Interaccion;
 private:
 	float radio;
 	Vector2D posicion;

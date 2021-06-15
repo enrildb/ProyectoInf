@@ -6,8 +6,8 @@ tanqueEnemigo::tanqueEnemigo(){
 }
 
 void tanqueEnemigo::Inicializa() {
-	posicion.x =  0.5;
-	posicion.y = 0.5;
+	posicion.x =  0.75;
+	posicion.y = 0.0;
 	apuntado.x = 1.0;
 	apuntado.y = 0.0;
 	vel = 0.01;

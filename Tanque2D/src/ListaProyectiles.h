@@ -5,6 +5,8 @@
 
 class ListaProyectiles
 {
+	friend class Interaccion;
+
 	Proyectil* lista[MAX_PROYECTILES];
 	int numero;
 	int municion;
@@ -17,6 +19,8 @@ public:
 	void setPos(Vector2D);
 	void setMunicion(int);
 	void mueve(float t);
+	//void rebote(Pared& p);
+	//void rebote(Caja& c);
 	void dibuja();
 	void colision();
 };

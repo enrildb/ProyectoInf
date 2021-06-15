@@ -19,8 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Caja.cpp" />
+    <ClCompile Include="src\Interaccion.cpp" />
+    <ClCompile Include="src\ListaCajas.cpp" />
     <ClCompile Include="src\ListaProyectiles.cpp" />
     <ClCompile Include="src\Mundo.cpp" />
+    <ClCompile Include="src\Pared.cpp" />
     <ClCompile Include="src\Principal.cpp" />
     <ClCompile Include="src\Proyectil.cpp" />
     <ClCompile Include="src\tanque.cpp" />
@@ -29,9 +33,13 @@
     <ClCompile Include="src\Vector2D.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Caja.h" />
     <ClInclude Include="src\ColorRGB.h" />
+    <ClInclude Include="src\Interaccion.h" />
+    <ClInclude Include="src\ListaCajas.h" />
     <ClInclude Include="src\ListaProyectiles.h" />
     <ClInclude Include="src\Mundo.h" />
+    <ClInclude Include="src\Pared.h" />
     <ClInclude Include="src\Proyectil.h" />
     <ClInclude Include="src\tanque.h" />
     <ClInclude Include="src\tanqueEnemigo.h" />
@@ -44,7 +52,7 @@
     <ProjectGuid>{e575fade-b6eb-4154-a1ed-8067a12eae98}</ProjectGuid>
     <RootNamespace>Pang</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Tanque2D</ProjectName>
+    <ProjectName>Taque2D</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

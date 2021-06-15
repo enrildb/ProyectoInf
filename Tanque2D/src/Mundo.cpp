@@ -1,5 +1,6 @@
 #include "Mundo.h"
 #include "freeglut.h"
+#include "Interaccion.h"
 #include <math.h>
 
 Mundo::Mundo(){}
@@ -8,6 +9,8 @@ void Mundo::dibuja()
 {        
 	tankJ.Dibuja();
 	tankE.Dibuja();
+	caja.Dibuja();
+	cajas.Dibuja();
 }
 
 void Mundo::mueve()
@@ -16,12 +19,19 @@ void Mundo::mueve()
 	tankJ.setApuntado(raton.x, raton.y);
 	tankE.Mueve(0.025f);
 	tankE.setApuntado(tankJ.getPos());
+    Interaccion::rebote(tankJ, caja);
+	for (int i = 0; i < 4; i++) {
+		Interaccion::rebote(tankJ, *cajas[i]);
+	}
+
 }
 
 void Mundo::inicializa()
 {
 	tankJ.Inicializa();
 	tankE.Inicializa();
+	caja.Inicializa(-0.04f, 0.2f, 0.04f,-0.2f);
+	cajas.Inicializa();
 }
 
 void Mundo::tecla(unsigned char key)
@@ -67,5 +77,6 @@ void Mundo::setRaton(int x, int y) {
 	raton.x = (x / 400.0f - 1);
 	raton.y = (400 - y) / 400.0f;
 }
+
 
 

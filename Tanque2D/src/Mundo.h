@@ -2,6 +2,9 @@
 #include "Vector2D.h"
 #include "tanqueJugador.h"
 #include "tanqueEnemigo.h"
+#include "Pared.h"
+#include "Caja.h"
+#include "ListaCajas.h"
 
 class Mundo
 {
@@ -9,6 +12,9 @@ private:
 	Vector2D raton;
 	tanqueJugador tankJ;
 	tanqueEnemigo tankE;
+	Caja caja;
+	ListaCajas cajas;
+	//ListaCajas cajas;
 
 public: 
 	Mundo();

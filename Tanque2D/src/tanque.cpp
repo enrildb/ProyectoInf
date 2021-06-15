@@ -9,22 +9,6 @@ void tanque::Inicializa() {
 	color.set(255, 255, 255);
 }
 
-//void tanque::Inicializa(Vector2D posicion, Vector2D velocidad, Vector2D aceleracion, float salud, float daño_disparo, float municion, float velocidad_proyectil, float cadencia, float rango, float num_proyectiles, float vel) {
-//	this->posicion.x = posicion.x;
-//	this->posicion.y = posicion.y;
-//	this->velocidad.x = velocidad.x;
-//	this->velocidad.y = velocidad.y;
-//	this->aceleracion.x = aceleracion.x;
-//	this->aceleracion.y = aceleracion.y;
-//	this->salud = salud;
-//	this->daño_disparo = daño_disparo;
-//	this->municion = municion;
-//	this->velocidad_proyectil = velocidad_proyectil;
-//	this->cadencia = cadencia;
-//	this->rango = rango;
-//	this->num_proyectiles = num_proyectiles;
-//	this->vel = vel;
-//}
 
 
 tanque::tanque() {
