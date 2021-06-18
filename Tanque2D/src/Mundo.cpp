@@ -7,6 +7,11 @@ Mundo::Mundo(){}
 
 void Mundo::dibuja()
 {        
+	//gluLookAt(1.0, 0.0, 0.0,
+	//	0.0, 0.0, 0.0,
+	//	0.0, 1.0, 0.0);
+
+
 	tankJ.Dibuja();
 	tankE.Dibuja();
 	caja.Dibuja();
@@ -73,10 +78,21 @@ void Mundo::teclaEspecial(unsigned char key)
 	//	raton.y = y;
  //   }
 
+//void Mundo::setRaton(int x, int y) {
+//	raton.x = (x / 400.0f - 1);
+//	raton.y = (400 - y) / 400.0f;
+//}
+//void Mundo::setRaton(int x, int y) {
+//	raton.x = (x / ESCALA - 1);
+//	raton.y = (ESCALA - y) / ESCALA;
+//
+//}
 void Mundo::setRaton(int x, int y) {
-	raton.x = (x / 400.0f - 1);
-	raton.y = (400 - y) / 400.0f;
+	raton.x = (x - ANCHO/2)/ESCALA;
+	raton.y = (ALTO/2 - y) / ESCALA;
+
 }
+
 
 
 

@@ -6,6 +6,10 @@
 #include "Caja.h"
 #include "ListaCajas.h"
 
+#define ALTO 800.0F
+#define ANCHO 1600.0F
+#define ESCALA 200.0F
+
 class Mundo
 {
 private:

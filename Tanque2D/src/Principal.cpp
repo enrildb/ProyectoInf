@@ -19,8 +19,19 @@ int main(int argc, char* argv[])
 {
 	
 	glutInit(&argc, argv);
-	glutInitWindowSize(800, 800);
+	glutInitWindowSize(ANCHO, ALTO);
 	glutCreateWindow("MiJuego");
+	//glMatrixMode(GL_PROJECTION);
+	//gluPerspective(45, (float)ANCHO / ALTO, 0.1, 150);
+	glMatrixMode(GL_PROJECTION);
+	glLoadIdentity();
+	//glOrtho(0.0f, ANCHO, ALTO, 0.0f, 0.0f, 1.0f);
+	//glOrtho(-1.0f, 1.0F, -1.0F, 1.0f, 0.0f, 1.0f);
+	//glOrtho(-1, ANCHO/ESCALA-1, 1-ALTO/ESCALA, 1, 0.0f, 1.0f);
+	glOrtho(-ANCHO / (2*ESCALA), ANCHO / (2*ESCALA), - ALTO / (2*ESCALA), ALTO / (2*ESCALA), 0.0f, 1.0f);
+
+
+
 
 	ColorRGB color = ColorRGB(233, 208, 154);
 	glClearColor(color.r/255.0f, color.g/255.0f, color.b/255.0f,0.0f);

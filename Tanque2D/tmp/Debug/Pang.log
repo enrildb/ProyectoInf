@@ -1,24 +1,6 @@
-﻿  Caja.cpp
-  Interaccion.cpp
-  ListaCajas.cpp
-  ListaProyectiles.cpp
-  Mundo.cpp
-  Pared.cpp
+﻿  Mundo.cpp
   Principal.cpp
-  Proyectil.cpp
-C:\Users\Enri\Desktop\Tanque2D\src\Proyectil.cpp(11,14): warning C4305: '=': truncamiento de 'double' a 'float'
-C:\Users\Enri\Desktop\Tanque2D\src\Proyectil.cpp(21,27): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Enri\Desktop\Tanque2D\src\Proyectil.cpp(26,25): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\Enri\Desktop\Tanque2D\src\Proyectil.cpp(27,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\Enri\Desktop\Tanque2D\src\Proyectil.cpp(27,25): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-  tanque.cpp
-C:\Users\Enri\Desktop\Tanque2D\src\tanque.cpp(7,12): warning C4305: '=': truncamiento de 'double' a 'float'
-C:\Users\Enri\Desktop\Tanque2D\src\tanque.cpp(60,38): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\Enri\Desktop\Tanque2D\src\tanque.cpp(66,38): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-  tanqueEnemigo.cpp
-C:\Users\Enri\Desktop\Tanque2D\src\tanqueEnemigo.cpp(13,12): warning C4305: '=': truncamiento de 'double' a 'float'
-  tanqueJugador.cpp
-C:\Users\Enri\Desktop\Tanque2D\src\tanqueJugador.cpp(9,12): warning C4305: '=': truncamiento de 'double' a 'float'
-  Vector2D.cpp
+C:\Users\Enri\Desktop\Tanque2D\src\Principal.cpp(22,28): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\Enri\Desktop\Tanque2D\src\Principal.cpp(22,21): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
   Generando código...
   Pang.vcxproj -> C:\Users\Enri\Desktop\Tanque2D\bin\Taque2D.exe
